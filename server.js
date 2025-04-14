@@ -34,7 +34,7 @@ app.use('/api/users',uRts);
 app.use('/api/prompts',pRts);
 
 mongoose.connect(process.env.MONGOURL).then(()=>{
-    app.listen(process.env.PORT,()=>{
-        console.log("Connected to database and listening at ",process.env.PORT);
+    app.listen(PORT,()=>{
+        console.log("Connected to database and listening at ",PORT);
     })
 }).catch(error=>{console.log('Server Connection error:',error)})
