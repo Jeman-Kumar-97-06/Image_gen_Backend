@@ -8,6 +8,8 @@ const pRts     = require('./routes/prompts');
 
 const app      = express();
 
+const PORT     = process.env.PORT || 4000;
+
 //CORS
 // app.options("*", cors()); 
 // app.use(cors({
